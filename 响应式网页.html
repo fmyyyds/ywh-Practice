@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<h2>响应式网页布局</h2>
+<p>在这个例子中，我们将创建一个响应式三列布局，其中每列的宽度将根据屏幕大小而变化。</p>
+
+<div class="row">
+  <div class="col-4" style="background-color:#aaa;">
+    <h2>第一列</h2>
+    <p>一些文本..</p>
+  </div>
+  <div class="col-4" style="background-color:#bbb;">
+    <h2>第二列</h2>
+    <p>一些文本..</p>
+  </div>
+  <div class="col-4" style="background-color:#ccc;">
+    <h2>第三列</h2>
+    <p>一些文本..</p>
+  </div>
+</div>
+
+</body>
+</html>
